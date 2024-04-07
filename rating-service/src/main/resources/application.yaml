@@ -1,0 +1,25 @@
+server:
+ port: 9003
+ 
+spring:
+ application:
+  name: rating
+
+
+
+eureka:
+ client:
+  serviceUrl:
+   defaultZone: http://localhost:8761/eureka
+  registerWithEureka: true
+  fetchRegistry: true
+
+management:
+ endpoints:
+  web:
+   exposure:
+    include: "*"
+ endpoint:
+  health:
+   enabled: true
+   
